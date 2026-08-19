@@ -1,0 +1,58 @@
+# ============================================================
+# Fundamentos de Arquitectura LLM — Sesión 1
+# requirements.txt
+# ============================================================
+# Instalar con: pip install -r requirements.txt
+
+# --- Framework Web ---
+fastapi==0.115.0          # API REST moderna y rápida
+uvicorn[standard]==0.30.6  # Servidor ASGI para FastAPI
+python-multipart==0.0.9   # Soporte para form data
+
+# --- HTTP Client ---
+httpx==0.27.2             # Cliente HTTP async (para llamadas a Ollama)
+requests==2.32.3          # Cliente HTTP síncrono (para ejemplos simples)
+
+# --- Data Validation ---
+pydantic==2.9.2           # Validación de datos y schemas
+pydantic-settings==2.5.2  # Settings con variables de entorno
+
+# --- LLM & AI ---
+ollama==0.3.3             # Cliente oficial de Ollama para Python
+openai==1.51.0            # Cliente OpenAI (para comparar con GPT)
+anthropic==0.36.2         # Cliente Anthropic (para comparar con Claude)
+tiktoken==0.7.0           # Tokenizador oficial de OpenAI (para conteos)
+
+# --- Embeddings & Vectores ---
+numpy==2.1.1              # Operaciones numéricas con vectores
+scipy==1.14.1             # Distancias coseno entre embeddings
+scikit-learn==1.5.2       # Utilidades ML y reducción de dimensiones (PCA)
+
+# --- Jupyter Notebooks ---
+jupyter==1.1.1            # Para los notebooks educativos
+ipykernel==6.29.5         # Kernel de Python para Jupyter
+matplotlib==3.9.2         # Visualización en notebooks
+
+# --- Utilidades ---
+python-dotenv==1.0.1      # Carga de variables .env
+rich==13.8.1              # Output bonito en terminal
+typer==0.12.5             # CLI helpers
+
+# --- Testing ---
+pytest==8.3.3             # Framework de pruebas
+httpx==0.27.2             # Testing de APIs (ya incluido arriba)
+
+# ============================================================
+# Notas de instalación:
+#
+# 1. Crear entorno virtual primero:
+#    python -m venv venv
+#    source venv/bin/activate  (Linux/Mac)
+#    venv\Scripts\activate     (Windows)
+#
+# 2. Instalar dependencias:
+#    pip install -r requirements.txt
+#
+# 3. Ollama debe instalarse por separado desde:
+#    https://ollama.com/download
+# ============================================================

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Variables de entorno (NUNCA subir al repo)
+.env
+*.env.local
+
+# Node / React
+node_modules/
+dist/
+.next/
+frontend/dist/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Datos y modelos (muy pesados)
+*.bin
+*.gguf
+models/
+data/raw/
