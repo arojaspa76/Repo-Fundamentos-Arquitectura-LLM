@@ -41,5 +41,5 @@ logs/
 # Datos y modelos (muy pesados)
 *.bin
 *.gguf
-models/
+#models/
 data/raw/
