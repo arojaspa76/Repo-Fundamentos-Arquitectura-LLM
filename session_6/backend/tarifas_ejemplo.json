@@ -1,0 +1,40 @@
+{
+  "_advertencia": "TARIFAS DE EJEMPLO PARA FINES DIDÁCTICOS. Los precios de los proveedores de LLM cambian con frecuencia (a veces varias veces al año). ANTES de usar este módulo para una decisión real, reemplace estos valores con los precios vigentes publicados en la página oficial de pricing de cada proveedor y actualice 'fecha_referencia'.",
+
+  "openai:gpt-4o-mini": {
+    "usd_por_millon_entrada": 0.15,
+    "usd_por_millon_salida": 0.60,
+    "fecha_referencia": "EJEMPLO — verificar en https://openai.com/api/pricing/",
+    "nota": "Modelo económico, útil como línea base de costo bajo en el PoC."
+  },
+  "openai:gpt-4o": {
+    "usd_por_millon_entrada": 2.50,
+    "usd_por_millon_salida": 10.00,
+    "fecha_referencia": "EJEMPLO — verificar en https://openai.com/api/pricing/",
+    "nota": "Modelo de mayor capacidad, costo significativamente más alto por token."
+  },
+  "anthropic:claude-haiku-4-5": {
+    "usd_por_millon_entrada": 1.00,
+    "usd_por_millon_salida": 5.00,
+    "fecha_referencia": "EJEMPLO — verificar en https://www.anthropic.com/pricing",
+    "nota": "Modelo rápido/económico de la familia Claude."
+  },
+  "anthropic:claude-sonnet-4-5": {
+    "usd_por_millon_entrada": 3.00,
+    "usd_por_millon_salida": 15.00,
+    "fecha_referencia": "EJEMPLO — verificar en https://www.anthropic.com/pricing",
+    "nota": "Modelo de uso general de la familia Claude."
+  },
+  "google:gemini-2.5-flash": {
+    "usd_por_millon_entrada": 0.30,
+    "usd_por_millon_salida": 2.50,
+    "fecha_referencia": "EJEMPLO — verificar en https://ai.google.dev/gemini-api/docs/pricing",
+    "nota": "Modelo económico de la familia Gemini."
+  },
+  "ollama:__default__": {
+    "usd_por_millon_entrada": 0.0,
+    "usd_por_millon_salida": 0.0,
+    "fecha_referencia": "N/A — modelo local",
+    "nota": "Ollama corre localmente: sin costo por token de API. El costo real es de infraestructura (GPU/CPU, energía, tiempo de operación), no de tokens — ver docs/marco_evaluacion.md."
+  }
+}

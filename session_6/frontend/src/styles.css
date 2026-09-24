@@ -1,0 +1,261 @@
+:root {
+  --navy: #1e2761;
+  --ice: #cadcfc;
+  --dark: #212121;
+  --grey: #595959;
+  --bg: #f7f8fc;
+  --ok: #1b7a3d;
+  --alerta-alto: #b3261e;
+  --alerta-medio: #b8860b;
+  --alerta-bajo: #1b7a3d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+.app-header {
+  border-bottom: 1px solid var(--ice);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  color: var(--grey);
+  margin: 0 0 6px;
+}
+
+.app-header h1 {
+  color: var(--navy);
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.subtitulo {
+  color: var(--grey);
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.tab {
+  padding: 10px 16px;
+  border: 1px solid var(--ice);
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--navy);
+}
+
+.tab-activo {
+  background: var(--navy);
+  color: white;
+  border-color: var(--navy);
+}
+
+.panel {
+  background: white;
+  border: 1px solid var(--ice);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.panel h2 {
+  color: var(--navy);
+  margin-top: 0;
+}
+
+.panel h3 {
+  color: var(--navy);
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.ayuda {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fila-controles {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 16px 0;
+}
+
+.fila-controles label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: var(--grey);
+  gap: 4px;
+  text-transform: capitalize;
+}
+
+.fila-controles input,
+.fila-controles select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--alerta-alto);
+  font-weight: 600;
+}
+
+.tarjetas-resumen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.tarjeta {
+  background: var(--bg);
+  border: 1px solid var(--ice);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tarjeta-texto p {
+  font-size: 13px;
+  color: var(--dark);
+  margin: 4px 0 0;
+}
+
+.tarjeta-valor {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.tarjeta-etiqueta {
+  font-size: 12px;
+  color: var(--grey);
+  font-weight: 700;
+}
+
+.tabla-detalle {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.tabla-detalle th,
+.tabla-detalle td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla-detalle th {
+  background: var(--navy);
+  color: white;
+}
+
+.tabla-editable input {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.fila-ganadora {
+  background: #e8f5e9;
+}
+
+.riesgo-alto {
+  color: var(--alerta-alto);
+  font-weight: 700;
+}
+
+.riesgo-medio {
+  color: var(--alerta-medio);
+  font-weight: 700;
+}
+
+.riesgo-bajo {
+  color: var(--alerta-bajo);
+  font-weight: 700;
+}
+
+.pregunta-etica {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.resultado-banner {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.resultado-banner p {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+.banner-ok {
+  background: #e8f5e9;
+  border: 1px solid var(--ok);
+}
+
+.banner-alerta {
+  background: #fdecea;
+  border: 1px solid var(--alerta-alto);
+}
+
+.nota-advertencia {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  color: var(--grey);
+  font-style: italic;
+}
